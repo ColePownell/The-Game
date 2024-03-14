@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForwardMovement : MonoBehaviour
+public class ContactDestroyer : MonoBehaviour
 {
-    public float speed;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+        Destroy(collision.gameObject);
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,8 +20,6 @@ public class ForwardMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(speed * Time.deltaTime,0,0);
+        
     }
-
-
 }
