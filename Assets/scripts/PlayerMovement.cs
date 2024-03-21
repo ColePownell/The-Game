@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Vector2 movmentValue;
     private Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
