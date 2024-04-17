@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Animator animator;
     private float horizontal;
     private float speed = 3f;
-    private float jumpingpower = 5f;
+    private float jumpingpower = 8f;
     private bool isFacingRight = true;
 
     private Vector2 movmentValue;
