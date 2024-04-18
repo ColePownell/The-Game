@@ -76,11 +76,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -15.19611, y: 6.102968}
-      - {x: -15.263883, y: 0.44428495}
-      - {x: -15.255965, y: -5.6918974}
+    - - {x: -14.147011, y: 15.881651}
+      - {x: -14.24076, y: 0.5062928}
+      - {x: -14.325853, y: -5.6918974}
       - {x: 17.598688, y: -5.682395}
-      - {x: 17.606602, y: 6.219952}
+      - {x: 17.79155, y: 15.913515}
   m_UseDelaunayMesh: 0
 --- !u!1 &2578911057040317378
 GameObject:
@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 592511351647875925}
   - component: {fileID: 1075494262365358571}
   - component: {fileID: 1879242606503309373}
+  - component: {fileID: 1925974660570969969}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -365,6 +366,18 @@ MonoBehaviour:
   m_BoundingShape2D: {fileID: 8708118729770577296}
   m_Damping: 0.5
   m_MaxWindowSize: -1
+--- !u!114 &1925974660570969969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2758738453201807085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3290dfb6433ebb44a919f37f3df9b15a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2835220487969554323
 GameObject:
   m_ObjectHideFlags: 0

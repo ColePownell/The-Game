@@ -27,13 +27,6 @@ public class PlayerMovement : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
     }
-
-    //public void OnMove(InputValue value)
-    //{
-    //    movmentValue = value.Get<Vector2>() * speed;
-    //}
-
-    // Update is called once per frame
     
     
     void Update()
@@ -52,10 +45,6 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        //rb.AddRelativeForce(new Vector2(movmentValue.x * Time.deltaTime, 0f));
-
-        //transform.Translate(movmentValue.x * Time.deltaTime, 0, 0);
-
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A))
         {
             animator.SetBool("isMoving", true);
@@ -65,38 +54,14 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isMoving", false);
         }
        
-        // if (Input.GetKey(KeyCode.S))
-        //{
-        //make him short lol
-        //}
-        // if (Input.GetKey(KeyCode.W))
-        //{
-        //gravity needed
-        //}
     }
 
-    /*  public void OnJump()
-      {
-          if(IsGrounded())
-          { rb.velocity = new Vector2(rb.velocity.x, jumpingpower); }
-
-      }*/
 
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
-    /*public void OnMove(InputValue value)
-    {
-        animator.SetBool("isMoving", true);
-        if (value.isPressed)
-        {
-            animator.SetBool("isMoving", false);
-        }
-
-        // animator.SetBool("isMoving", true);
-    }*/
 
     public bool IsGrounded()
     {
